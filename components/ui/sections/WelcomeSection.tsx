@@ -1,17 +1,27 @@
 import React from 'react'
+import Image from 'next/image'
 
 const WelcomeSection = () => {
   return (
-      <section className="w-full bg-[#FCFCFC] py-20 px-4 lg:px-8">
+      <section className="w-full  bg-[rgba(255,215,0,0.04)] py-20 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-black text-center mb-8">
             Welcome Message
           </h2>
           
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* Pastor Photo Placeholder */}
+            {/* Pastor Photo */}
             <div className="w-full lg:w-1/3">
-              <div className="aspect-square bg-gray-200 rounded-xl"></div>
+              <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/pastor-message.png"
+                  alt="Reverend Michael Opoku - Pastor of Newlife Community Baptist Church"
+                  width={466}
+                  height={566}
+                  className=" object-contain"
+                  priority
+                />
+              </div>
             </div>
             
             {/* Welcome Text */}
