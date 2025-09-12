@@ -2,7 +2,7 @@ import React from 'react'
 
 const UpcomingSection = () => {
   return (
-      <section className="w-full bg-[#FAF1DE] py-20 px-4 lg:px-8">
+      <section className="w-full py-20 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-black text-center mb-8">
             Upcoming Events
@@ -13,7 +13,7 @@ const UpcomingSection = () => {
           </p>
           
           {/* Event Carousel */}
-          <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="bg-[#FAF1DE] rounded-xl p-8 shadow-lg">
             <div className="flex flex-col lg:flex-row gap-8 items-center">
               {/* Event Image Placeholder */}
               <div className="w-full lg:w-1/2">
