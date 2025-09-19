@@ -1,8 +1,13 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const HeroSection = () => {
+  const router = useRouter()
+  const handleButtonClick = () =>{
+    router.push('/about-us')
+  }
   return (
     <div className="w-full">
       {/* Main Hero Section */}
@@ -43,7 +48,7 @@ const HeroSection = () => {
           </p>
           
           {/* About Us Button */}
-          <button className="bg-[#FFD700] text-[#2E2E2E] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#E6C200] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2 mx-auto">
+          <button className="bg-[#FFD700] text-[#2E2E2E] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#E6C200] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2 mx-auto" onClick={handleButtonClick}>
             About Us
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
