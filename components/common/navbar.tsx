@@ -12,10 +12,10 @@ const Navbar = () => {
 
       {/* Navigation Menu */}
       <div className="hidden lg:flex items-center space-x-5">
-        <a href="#" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
+        <a href="/" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
           Home
         </a>
-        <a href="#" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
+        <a href="/about-us" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
           About Us
         </a>
         <a href="#" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
