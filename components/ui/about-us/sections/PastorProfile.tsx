@@ -35,11 +35,11 @@ const PastorProfile = () => {
             
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Pastor Michael brings over 15 years of ministry experience and a heart for discipleship. His passion for seeing lives transformed through the Gospel has been the driving force behind our church's growth and impact in the community.
+                {`Pastor Michael brings over 15 years of ministry experience and a heart for discipleship. His passion for seeing lives transformed through the Gospel has been the driving force behind our church's growth and impact in the community.`}
               </p>
               
               <p>
-                Under his leadership, New Life Community Baptist Church has become a beacon of hope, focusing on authentic relationships, biblical teaching, and practical faith that makes a difference in everyday life.
+                {`Under his leadership, New Life Community Baptist Church has become a beacon of hope, focusing on authentic relationships, biblical teaching, and practical faith that makes a difference in everyday life.`}
               </p>
             </div>
 
@@ -48,7 +48,7 @@ const PastorProfile = () => {
             {/* Quote */}
             <div className="bg-[#FFD700] p-6 rounded-lg">
               <p className="text-lg text-gray-800 italic font-medium">
-                "My heart's desire is to see every member of our church family discover their purpose in God's kingdom and live it out with passion and power."
+               {` "My heart's desire is to see every member of our church family discover their purpose in God's kingdom and live it out with passion and power."`}
               </p>
             </div>
           </div>

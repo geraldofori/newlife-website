@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -12,9 +13,9 @@ const Navbar = () => {
 
       {/* Navigation Menu */}
       <div className="hidden lg:flex items-center space-x-5">
-        <a href="/" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
+        <Link href="/" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
           Home
-        </a>
+        </Link>
         <a href="/about-us" className="text-[#1A1A1A] text-base font-normal hover:text-[#FFD700] transition-colors">
           About Us
         </a>
