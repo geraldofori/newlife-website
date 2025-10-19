@@ -26,7 +26,7 @@ const WeeklySection = () => {
                   <div className="flex items-center gap-2 text-[#6B7280]">
                     <span className="font-medium">Sunday</span>
                     <span>•</span>
-                    <span>8:30 AM - 10:00 AM</span>
+                    <span>8:30 AM - 12:00 PM</span>
                   </div>
                 </div>
               </div>
