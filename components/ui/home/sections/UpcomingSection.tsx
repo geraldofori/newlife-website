@@ -1,48 +1,9 @@
 "use client"
+import { events } from '@/constants'
 import React, { useState, useEffect } from 'react'
-
-interface EventData {
-  id: number
-  title: string
-  date: string
-  time: string
-  location: string
-  description: string
-  badge: string
-}
 
 const UpcomingSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
-  
-  const events: EventData[] = [
-    {
-      id: 1,
-      title: "New Year Revival Service",
-      date: "January 12, 2025",
-      time: "6:00 PM",
-      location: "Church Premises",
-      description: "Special revival service to kick off the new year with spiritual renewal",
-      badge: "Upcoming Event"
-    },
-    {
-      id: 2,
-      title: "Youth Conference 2025",
-      date: "February 15, 2025",
-      time: "9:00 AM",
-      location: "Main Auditorium",
-      description: "Empowering the next generation with faith, purpose, and community building",
-      badge: "Special Event"
-    },
-    {
-      id: 3,
-      title: "Easter Celebration Service",
-      date: "March 30, 2025",
-      time: "10:00 AM",
-      location: "Church Premises",
-      description: "Join us for our annual Easter celebration with worship, fellowship, and renewal",
-      badge: "Holiday Service"
-    }
-  ]
 
   // Auto-advance carousel every 5 seconds
   useEffect(() => {
@@ -77,7 +38,7 @@ const UpcomingSection = () => {
             <div className="w-full lg:w-1/2">
               <div className="aspect-video bg-gradient-to-br from-[#24195D] to-[#E53935] rounded-xl flex items-center justify-center">
                 <div className="text-white text-center">
-                  <div className="text-4xl font-bold mb-2">{currentEvent.title.split(' ')[0]}</div>
+                  <div className="text-4xl font-bold mb-2">{currentEvent.preview}</div>
                   <div className="text-lg opacity-90">{currentEvent.badge}</div>
                 </div>
               </div>
