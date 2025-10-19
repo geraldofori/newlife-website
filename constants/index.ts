@@ -5,7 +5,7 @@ export const events: EventData[] = [
     id: 1,
     preview: "FOP",
     title: "Festival of Prayer(21 days)",
-    date: "November 16, 2025 - December 7, 2025",
+    date: "November 17, 2025 - December 7, 2025",
     time: "7:00 PM",
     location: "Church Premises",
     description:
