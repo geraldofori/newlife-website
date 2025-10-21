@@ -2,6 +2,7 @@
 import { events } from '@/constants'
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { PanInfo } from 'framer-motion';
 
 const UpcomingSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -32,7 +33,7 @@ const UpcomingSection = () => {
   }
 
   // Handle drag end to detect swipe direction
-  const handleDragEnd = (event: any, info: any) => {
+  const handleDragEnd = (event: PointerEvent, info: PanInfo) => {
     const swipeThreshold = 50
     const { offset, velocity } = info
 
