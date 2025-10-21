@@ -1,5 +1,4 @@
 import React from 'react'
-import YoutubeVideo from '../YoutubeVideo'
 
 const SermonSection = () => {
   return (
@@ -14,7 +13,7 @@ const SermonSection = () => {
               {/* Video Player Placeholder */}
               <div className="relative w-full ">
                 <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-scW17arQ50?si=QZQI9N2KouE-BVgY&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-scW17arQ50?si=QZQI9N2KouE-BVgY&amp;" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
               </div>
               
