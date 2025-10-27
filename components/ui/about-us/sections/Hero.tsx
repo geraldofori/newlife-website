@@ -1,6 +1,6 @@
-"use client"
-import React from 'react'
-import Image from 'next/image'
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const AboutHero = () => {
   return (
@@ -17,31 +17,21 @@ const AboutHero = () => {
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#001F3F]/80 to-[#001F3F]/60"></div>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 text-center px-4 lg:px-8 max-w-6xl mx-auto">
-        {/* Theme Tag */}
-        <div className="mb-8">
-          <div className="inline-flex items-center px-5 py-1 bg-[#FFD700] rounded-lg">
-            <span className="text-[#2E2E2E] text-lg font-bold">
-              About Newlife Community Baptist Church
-            </span>
-          </div>
-        </div>
-        
-        {/* Main Heading */}
         <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-          About<br />
+          About
+          <br />
           Newlife Community Baptist Church
         </h1>
-        
-        {/* Subtitle */}
         <p className="text-xl lg:text-2xl text-white mb-8 leading-relaxed max-w-4xl mx-auto">
-          Discover our heart for God, passion for people, and commitment to building His kingdom.
+          Discover our heart for God, passion for people, and commitment to
+          building His kingdom.
         </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutHero
+export default AboutHero;
