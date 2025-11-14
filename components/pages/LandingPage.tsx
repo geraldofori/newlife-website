@@ -62,12 +62,12 @@ const LandingPage = () => {
             className="bg-black text-white px-6 py-3 rounded-lg! font-medium text-base shadow-lg hover:bg-gray-800 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => router.push("/prayer-wall/wall")}
+            onClick={() => router.push("/prayer-request/wall")}
           >
             View Prayer Wall
           </motion.button>
           <motion.button
-            onClick={openModal}
+            // onClick={openModal}
             className="bg-yellow-400 text-black px-6 py-3 rounded-lg! font-medium text-base shadow-lg hover:bg-yellow-300 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
