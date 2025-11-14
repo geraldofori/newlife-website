@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import PrayerRequestModal from "../ui/PrayerRequestModal";
 import { motion } from "framer-motion";
 import { useModal } from "@/hooks/useModal";
 import { useRouter } from "next/navigation";
 import PageHeader from "../common/PageHeader";
+import { RequestForm } from "../ui/RequestForm";
 
 const LandingPage = () => {
   const { isOpen, openModal, closeModal } = useModal();
@@ -67,7 +67,7 @@ const LandingPage = () => {
             View Prayer Wall
           </motion.button>
           <motion.button
-            // onClick={openModal}
+            onClick={openModal}
             className="bg-yellow-400 text-black px-6 py-3 rounded-lg! font-medium text-base shadow-lg hover:bg-yellow-300 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -76,7 +76,7 @@ const LandingPage = () => {
           </motion.button>
         </motion.div>
       </motion.div>
-      <PrayerRequestModal show={isOpen} onHide={closeModal} />
+      {isOpen && <RequestForm onClose={closeModal} />}
     </div>
   );
 };
