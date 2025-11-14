@@ -21,7 +21,7 @@ const NavItem = ({
       } rounded-xl `}
     >
       <Link
-        href={`/prayer-wall/admin/${href}`}
+        href={`/prayer-request/admin/${href}`}
         className="text-black flex no-underline! gap-3"
       >
         {children}
