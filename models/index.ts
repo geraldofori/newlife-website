@@ -1,3 +1,6 @@
+export type LayoutComponent = React.FC<{
+  children: React.ReactNode;
+}>;
 export interface EventData {
   id: number;
   title: string;
@@ -7,4 +10,27 @@ export interface EventData {
   location: string;
   description: string;
   badge: string;
+}
+
+export interface Prayer {
+  id: string;
+  user: {
+    name: string;
+    initials: string;
+    color: string;
+  };
+  timestamp: string;
+  prayer: {
+    title: string;
+    content: string;
+  };
+}
+
+export interface PrayerRequest {
+  id: string;
+  name: string;
+  status: "Open" | "Closed";
+  phone: string;
+  dateSubmitted: string;
+  canDelete?: boolean;
 }
