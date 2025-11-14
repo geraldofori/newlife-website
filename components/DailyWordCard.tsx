@@ -17,6 +17,7 @@ const DailyWordCard: React.FC<DailyWordCardProps> = ({ verse, reference }) => {
           alt="Newlife"
           width={60}
           height={50}
+          unoptimized
         />
         <h3 className="text-gray-500 text-xs font-normal mb-2 mt-4 text-center">
           Daily Word
