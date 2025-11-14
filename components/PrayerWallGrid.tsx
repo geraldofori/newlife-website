@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { samplePrayers } from "@/constants";
 import PrayerCard from "./common/PrayerCard";
-import { useRouter } from "next/navigation";
 import PageHeader from "./common/PageHeader";
 
 interface PrayerGridProps {

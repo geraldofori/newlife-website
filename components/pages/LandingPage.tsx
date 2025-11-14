@@ -67,7 +67,7 @@ const LandingPage = () => {
             View Prayer Wall
           </motion.button>
           <motion.button
-            onClick={openModal}
+            // onClick={openModal}
             className="bg-yellow-400 text-black px-6 py-3 rounded-lg! font-medium text-base shadow-lg hover:bg-yellow-300 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
